@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Bootstrap</title> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        
+    <style>
+            .box1{height:210px;
+                width:200px;
+                background-color:pink;
+                top:210px ;
+                left:500px;
+            
+            }
+
+            .box2{height:200px;
+                background-color:rgb(206, 192, 255);
+                top:450px ;
+        
+            }
+
+    </style>
+    
+    </head>
+
+    
+    <body>
+
+            <div class="container box1">its is a container box 
+               <p>its alwyas fixed in its place </p>
+               <p>its leaves large margines and its size will not change when thye screen size changse</p>
+                
+            </div>
+
+            <div class="container-fluid box2">
+                <p>it can change its size acc to the width of the screen or website</p>
+                <p>it always touch the ends i.e. covers 100% width of the screen not matter how big or small</p>
+            </div>
+            <br><br>
+
+
+            <h1 style="text-align:center;
+                       background-color:rgb(245, 235, 144)"><i>grid system</i></h1>
+
+<!-- in bootstrap screen id divided into 12 columnss -->
+            <!-- the following is the grid structure ya must  remember it -->
+
+            
+            <div class="container">
+            <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 bg-primary">data1  </div>
+            <div class="col-sm-12 col-md-6 col-lg- col-xl-3 bg-secondary">data2</div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 bg-warning">data3  </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 bg-info">data4     </div>
+    
+            </div>    
+            </div>
+
+            
+<!-- here the sm,md,lg,xl(are the diff screen sizes) and diff nos after col tells the browser how much out of the 12 cols to show on diff screen sizes 
+ @note-> here data1 occupies 12 cols in the small screen then no other cols is shown -->
+<!-- 
+            sm -> small screen like-mobile                after  col-sm  12  is written therefore, on small scrn size each data will have 12 cols,   SINCE  in small srcn data1 will occupuie 12 col so no other col can be shown
+            md -> medium screen like-tablets,pc.laptop    after  col-md  6  is written therefore, on medium scrn size each data will have 6 cols,   SINCE  in medium srcn data1 will occupuie 6 col so there will be 6 cols left for another data for here its the data2  togetherly they will occupie 12 cols(6+6)
+            lg -> large screen  like- pc,laptop            (4+4+4)   visible= data1, data2, data3
+            xl -> extra large screen like- TV, etc..        (3+3+3+3)  visible= data1, data2, data3,data4
+
+-->
+
+
+    </body>
+</html>
